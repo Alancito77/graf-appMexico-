@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bandera de México</h1>
+    
+    <div class="bandera-container">
+        <div class="controls-container">
+            <div class="control-group">
+                <div class="control-label">Esperanza (Verde)</div>
+                <div class="slider-container">
+                    <input type="range" id="greenSlider" class="slider" min="0" max="255" value="153">
+                </div>
+                <div class="color-value" id="greenValue">#009922</div>
+            </div>
+            
+            <div class="control-group center">
+                <div class="control-label">Unidad (Blanco)</div>
+                <div class="slider-container">
+                    <input type="range" class="slider" min="0" max="255" value="255" disabled>
+                </div>
+                <div class="color-value">#FFFFFF</div>
+            </div>
+            
+            <div class="control-group">
+                <div class="control-label">Sangre de Héroes (Rojo)</div>
+                <div class="slider-container">
+                    <input type="range" id="redSlider" class="slider" min="0" max="255" value="220">
+                </div>
+                <div class="color-value" id="redValue">#800000</div>
+            </div>
+        </div>
+        
+        <div class="bandera">
+            <div class="franja franja-verde" id="franjaVerde"></div>
+            <div class="franja franja-blanca">
+                <div class="escudo">🦅</div>
+            </div>
+            <div class="franja franja-roja" id="franjaRoja"></div>
+        </div>
+        
+        <div class="significado">
+            <strong>Elaboro:</strong> <br>
+            <strong>ANA LUISA XOCHICALE GONZALEZ - 23200909:</strong><br>
+            <strong>ALAN LUGO HERNANDEZ - 23200859</strong> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
